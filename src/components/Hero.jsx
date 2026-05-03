@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import profile from "../assets/profile.png";
 import resume from "../assets/resume.pdf";
 
 const Hero = () => {
@@ -51,7 +52,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-right">
-        <img src="/profile.png" alt="profile" />
+        <img src={profile} alt="profile" />
       </div>
 
     </section>
