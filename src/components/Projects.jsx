@@ -4,7 +4,7 @@ const Projects = () => {
       title: "Li-Fi Data Transfer",
       description:
         "A hardware-based communication system that uses light to transmit data instead of radio signals. It demonstrates high-speed and secure wireless communication using LEDs and photodiodes.",
-      link: "#",
+      link: "#", // no repo
     },
     {
       title: "Portfolio Website",
@@ -24,14 +24,17 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <p>{project.description}</p>
 
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="btn"
-            >
-              View Repo
-            </a>
+            {/* Show button only if repo exists */}
+            {project.link !== "#" && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                View Repo
+              </a>
+            )}
           </div>
         ))}
       </div>
