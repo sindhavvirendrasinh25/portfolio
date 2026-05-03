@@ -1,16 +1,16 @@
 const Projects = () => {
   const projects = [
     {
-      title: "LiFi Data Transfer System",
-      desc: "Developed a hardware-based communication system using LiFi technology, where data is transmitted through light instead of radio waves. The system uses an LED to transmit data and a photodiode to receive and decode signals, ensuring fast and secure communication. This project strengthened my understanding of embedded systems and real-time data transmission.",
-      tech: "Arduino, LED, Photodiode, Embedded Systems",
-      type: "Hardware Project",
+      title: "Li-Fi Data Transfer",
+      description:
+        "A hardware-based communication system that uses light to transmit data instead of radio signals. It demonstrates high-speed and secure wireless communication using LEDs and photodiodes.",
+      link: "#",
     },
     {
       title: "Portfolio Website",
-      desc: "Designed and developed a modern personal portfolio using React to showcase my skills and projects. It features a responsive layout, reusable components, and smooth navigation, demonstrating strong frontend development and UI design skills.",
-      tech: "React, JavaScript, CSS",
-      link: "https://github.com/sindhavvirendrasinh25/portfolio"
+      description:
+        "A responsive personal portfolio website built using React and Vite. It showcases my projects, skills, and contact information with a clean modern UI.",
+      link: "https://github.com/sindhavvirendrasinh25/portfolio",
     },
   ];
 
@@ -18,25 +18,20 @@ const Projects = () => {
     <section id="projects" className="section">
       <h2>Projects</h2>
 
-      <div className="projects">
-        {projects.map((p, index) => (
-          <div className="project-card" key={index}>
-            <h3>{p.title}</h3>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <div key={index} className="card-glass project-card">
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
 
-            <p>{p.desc}</p>
-
-            <p className="tech">
-              <strong>Tech Used:</strong> {p.tech}
-            </p>
-
-            {/* BUTTON LOGIC */}
-            {p.type ? (
-              <button className="btn disabled">{p.type}</button>
-            ) : (
-              <a href={project.link} target="_blank" rel="noreferrer">
-  View Repo
-</a>
-            )}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+            >
+              View Repo
+            </a>
           </div>
         ))}
       </div>
