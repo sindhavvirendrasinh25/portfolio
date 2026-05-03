@@ -10,7 +10,7 @@ const Projects = () => {
       title: "Portfolio Website",
       desc: "Designed and developed a modern personal portfolio using React to showcase my skills and projects. It features a responsive layout, reusable components, and smooth navigation, demonstrating strong frontend development and UI design skills.",
       tech: "React, JavaScript, CSS",
-      link: "https://github.com/sindhavvirendrasinh25",
+      link: "https://github.com/sindhavvirendrasinh25/portfolio",
     },
   ];
 
