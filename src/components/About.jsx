@@ -5,7 +5,7 @@ const About = () => {
 
       <div className="about-container card-glass">
         <div className="about-img">
-        <img src="/portfolio/profile.png" alt="profile" className="about-img" />
+          <img src="/portfolio/profile.png" alt="profile" className="about-img" />
         </div>
 
         <div className="about-text">
