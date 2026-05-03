@@ -10,7 +10,7 @@ const Projects = () => {
       title: "Portfolio Website",
       desc: "Designed and developed a modern personal portfolio using React to showcase my skills and projects. It features a responsive layout, reusable components, and smooth navigation, demonstrating strong frontend development and UI design skills.",
       tech: "React, JavaScript, CSS",
-      link: "https://github.com/sindhavvirendrasinh25/portfolio",
+      link: "https://github.com/sindhavvirendrasinh25/portfolio"
     },
   ];
 
@@ -33,9 +33,9 @@ const Projects = () => {
             {p.type ? (
               <button className="btn disabled">{p.type}</button>
             ) : (
-              <a href={p.link} target="_blank" rel="noopener noreferrer">
-                <button className="btn">View Repo</button>
-              </a>
+              <a href={project.link} target="_blank" rel="noreferrer">
+  View Repo
+</a>
             )}
           </div>
         ))}
