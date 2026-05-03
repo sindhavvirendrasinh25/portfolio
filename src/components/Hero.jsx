@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
 
       <div className="hero-right">
-       <img src="/portfolio/profile.png" alt="profile" />
+      <img src="/portfolio/profile.png" alt="profile" />
       </div>
 
     </section>
